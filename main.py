@@ -1,4 +1,5 @@
 
+import random
 
 def options():
     print("which one would u like to do?")
@@ -17,8 +18,8 @@ def line_maker():
     num_lines = int(input("How many lines to draw? "))
     characters = input("What character(s) to use? ")
     repeat = int(input("How many times to repeat the character? "))
-    for _ in range(ammount_of_lines):
-        print(char * repeat)
+    for _ in range(num_lines):
+        print(characters * repeat)
 #this ramdomizes which shape to make either a box or diamond or a zigzag
 def random_design():
     choice = random.randint(1, 3)
@@ -66,4 +67,4 @@ def main():
             print("Invalid choice, please try again.")
 
 
-    main()
+main()
